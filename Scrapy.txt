@@ -7,3 +7,5 @@ response.xpath('//span[@class="tag-item"]/a/text()').getall()
 quotes = response.xpath('//*[@class="quote"]')
  quote = quotes[0]
  quote.xpath('.//*[@class="text"]')
+quote.xpath('.//*[@class="text"]').extract()
+ quote.xpath('.//*[@class="text"]/text()').extract()
