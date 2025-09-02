@@ -1,1 +1,9 @@
- response.xpath('//span[@class="text"]/text()').getall()
+https://quotes.toscrape.com/
+
+response.xpath('//span[@class="text"]/text()').getall()
+response.xpath('//span[@class="tag-item"]/a/text()').getall()
+
+
+quotes = response.xpath('//*[@class="quote"]')
+ quote = quotes[0]
+ quote.xpath('.//*[@class="text"]')
