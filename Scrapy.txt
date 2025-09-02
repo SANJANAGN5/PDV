@@ -1,1 +1,1 @@
-
+ response.xpath('//span[@class="text"]/text()').getall()
