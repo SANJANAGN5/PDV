@@ -9,3 +9,8 @@ quotes = response.xpath('//*[@class="quote"]')
  quote.xpath('.//*[@class="text"]')
 quote.xpath('.//*[@class="text"]').extract()
  quote.xpath('.//*[@class="text"]/text()').extract()
+
+
+response.xpath('//*[@class="next"]')
+response.xpath('//*[@class="next"]/a')
+response.xpath('//*[@class="next"]/a/@href')
